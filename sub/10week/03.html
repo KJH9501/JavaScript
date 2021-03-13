@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>객체의 참조복사</title>
+	<script type="text/javascript">
+		//얕은 복사
+		var originalArray = [1,2,3,4];
+		var newArray = originalArray;
+
+		// 원본 배열의 값을 변경
+		originalArray[0] = 273;
+
+		//출력
+		alert(originalArray); //273,2,3,4
+		alert(newArray); //273,2,3,4
+		// 객체(배열포함)를 변수에 저장하면 실제값 저장이 아닌 객체를 메모리에 만들고 위치를 저장하게됨.
+		// originalArray와 newArray는 같은 메모리를 참조하므로 같이바뀜
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

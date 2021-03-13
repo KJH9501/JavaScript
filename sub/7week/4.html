@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>가변인자함수</title>
+</head>
+<script type="text/javascript">
+	function add () {
+		var output = '';
+	//	var output = 0;
+		//자바스크립트의 모든 함수는 내부에 기본적으로 변수 arguments가 존재함
+		alert(typeof(arguments)); // object
+		alert(arguments.length); // 5
+		// arguments
+		for (var i=0; i < arguments.length; i++){
+			output += arguments[i] + '     ';
+		//  output += arguments[i];
+
+	}
+	return output;
+		}
+		var out = add (1,2,3,4,5);
+		alert(out);
+</script>
+<body>
+	
+</body>
+</html>

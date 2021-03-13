@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>return 키워드</title>
+</head>
+<script type="text/javascript">
+	/*return키워드는 함수가 실행하는 도중에 
+	함수를 호출한 곳으로 돌아가라는 의미
+	return키워드를 사용하면 값을 지정하지 않아도 함수를
+	호출한 곳으로 돌아감*/
+	function returnFunction() {
+		alert('문장A');
+		return;  // 여기서 멈춤
+		alert('문장B'); //실행되지 않음
+	}
+	returnFunction();
+	//내부함수
+	/*pythagoras = width*height
+	hypotenuse(빗변) = width(너비)의 제곱*height(높이) */
+	
+	function pythagoras() {
+		function square(x){
+		return x*x;
+	} //내부함수.
+		return Math.sqrt(square(width) + square(height));
+	} //
+</script>
+<body>
+	
+</body>
+</html>

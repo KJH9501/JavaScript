@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지역변수의 유효범위</title>
+	<script type="text/javascript">
+		function test(name) {
+			var output = 'Hello ' + name + '..!';
+			return function(){
+				alert(output);
+			};
+		}
+		test('영이공 1학년3반')();
+		//alert(output);
+		//함수안에있는 변수는 지역변수라서 함수외부에서 사용x
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

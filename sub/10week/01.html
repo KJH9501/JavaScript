@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>생성자함수</title>
+	<script type="text/javascript">
+		function test(options) {
+			options.valueA = options.valueA || 10;
+			options.valueB = options.valueB || 20;
+			options.valueC = options.valueC || 30;
+			
+			alert(options.valueA + ' : ' + options.valueB + ' : ' + options.valueC)
+		}
+		// 옵션 객체
+		// 함수의 매개변수로 전달하는 객체
+		test({
+			valueA:52,
+			valueC:273,
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

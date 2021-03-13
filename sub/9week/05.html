@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>속성 제거</title>
+	<script type="text/javascript">
+		var flight ={};
+		flight.airline = 'Korea';
+		flight.number = '747';
+		flight.arrival = 'Seoul';
+		flight.printAirline = function() {
+			alert('The flight is airline : ' + this.airline);
+		}
+		flight.printNumber = function() {
+			alert('The flight is airline : ' + this.number);
+		}
+
+		var out ='';
+		for (var i in flight) {
+			out += i + ': \t' + flight[i] + '\n';
+		}
+		alert(out);
+
+		flight.printAirline();
+		flight.printNumber();
+
+		delete (flight.printAirline);
+		var out2 = '';
+		for (var j in flight) {
+			out2 += j + ': \t' + flight[j] + '\n';
+		}
+		alert(out2);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

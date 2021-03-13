@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>with 키워드1</title>
+	<script type="text/javascript">
+		var car = {
+			name : 'car1',
+			model : 400,
+			color : 'black',
+
+			company : {
+				start:1997,
+				logo:'star'
+			},
+			run : function() {
+				alert(this.name + '  is running.');
+			}
+		};
+		var out = '';
+		
+			out += 'name : \t' + car.name + '\n';
+			out += 'model : \t' + car.model + '\n';
+			out += 'color : \t' + car.color + '\n';
+			out += 'company start : \t' + car.company.start + '\n';
+			out += 'company logo : \t' + car.company.logo + '\n';
+		
+		alert(out);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

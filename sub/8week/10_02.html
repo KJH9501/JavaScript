@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>콜백 함수</title>
+</head>
+<script type="text/javascript">
+	function returnFunction(){
+		return function () { alert('return'); };
+	}
+	returnFunction()(); //함수가 리턴되므로 한번더 호출해서 alert() 함수 출력
+</script>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>함수를 이용한 객체생성</title>
+	<script type="text/javascript">
+		function make(name, korean, english, math, history) {
+		var student = {
+			name: name, 
+			korean: korean, 
+			english: english, 
+			math: math, 
+			history: history,
+			getSum : function() {
+				return this.korean + this.english + this.math + this.history; 
+				},
+			getAverage : function () {
+				return this.getSum() /4;
+			}
+		};
+		return student;
+	}
+		var students =[]; 
+		students.push(make('홍길동',97,93,98,96));
+		students.push(make('김길동',87,88,80,88));
+		students.push(make('이길동',80,90,83,93));
+		students.push(make('고길동',95,87,90,92));
+		students.push(make('박길동',94,94,91,85));
+
+		
+		var out = '';
+		for (var j in students) {
+			with (students[j]) {
+				out += name + '\t총점:' + getSum() + '\t 평균: ' + getAverage() + '\n';
+			}
+		}
+		alert(out);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

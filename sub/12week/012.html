@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		today = new Date();
+		var hour = today.getHours();
+		var image;
+
+		//12시를 기준으로 다른이미지 출력 해당 웹페이지의 시간에 따른 배경 이미지 변경등에 활용 가능
+		if (hour >= 12) {
+			image = "jpg/rrrr.jpg";
+		}
+		else
+		{
+			image = "jpg/rrr.jpg";
+		}
+		document.write("<img src=" + image + ">");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>저축</title>
+    <script>
+        var input = prompt('저축금액', '');
+        var mon = Number(input);
+        var input2 = prompt('기간', '');
+        var per = Number(input2);
+        var x = 0.003;
+        var y = 0.005;
+        var z = 0.007;
+
+        if (per < 12) {
+            document.write('원금 : ' + mon + '<br>');
+            document.write('기간 : ' + per + '<br>');
+            document.write('이자 : ' + mon * x * per + '<br>');
+        }
+        else if (per > 24 && per < 12) {
+            document.write('원금 : ' + mon + '<br>');
+            document.write('기간 : ' + per + '<br>');
+            document.write('이자 : ' + mon * y * per + '<br>');
+        }
+        else
+            document.write('원금 : ' + mon + '<br>');
+            document.write('기간 : ' + per + '<br>');
+            document.write('이자 : ' + mon * z * per + '<br>');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

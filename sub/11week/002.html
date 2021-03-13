@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>기본자료형과객체에메서드추가</title>
+    <script>
+        var number1 = 123;
+        var number2 = new Number(123);
+        var out = '';
+        out += 'number1 의 type : ' + typeof (number1) + '\t값 : ' + number1 + '\n\n';
+        out += 'number2 의 type : ' + typeof (number2) + '\t값 : ' + number2 + '\n\n';
+        alert(out);
+        number1.print = function () {
+            alert('number1');
+        }
+        number2.print = function () {
+            alert('number2');
+        }
+        number2.print();
+        number1.print();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

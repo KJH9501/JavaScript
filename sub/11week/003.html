@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var number1 = 123;
+        var number2 = new Number(123);
+
+        var out = '';
+        out = 'number1 : ' + number1 + '\n' + 'number2 : ' + number2;
+        alert(out);
+
+        if (typeof (number1) == typeof (number2)) {
+            alert('typeof(number1) == typeof (number2)');
+        }
+
+        if (number1.constructor == number2.constructor) {
+            alert('number1.constructor == number2.constructor');
+        }
+
+        Object.prototype.print = function () {
+            alert('모든 객체에 추가');
+        }
+        out.print();
+        number2.print();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

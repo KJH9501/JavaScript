@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>prompt() 함수란..</title>
+    <script>
+        /* prompt함수란 사용자로부터 어떤 입력값을 받을때 사용 (scanf or Scanner?)
+        숫자형으로 입력받더라도 문자형으로 변형시켜 출력함 */
+        var input = prompt('Message를 입력하시오.', '입력, 취소');
+        document.write(input);
+        alert(typeof (input)); //string 형태
+        var numinput = (Number(input));//Number쓸때 N은 무조건 대문자/ 자료형형태를 숫자형으로 자동변환
+        alert(typeof (numinput)); //number 형태
+    </script>
+</head>
+<body>
+
+</body>
+</html>

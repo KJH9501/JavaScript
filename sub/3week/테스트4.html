@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>테스트4</title>
+    <script>
+        var id = 'user';
+        var pw = 'pw1234';
+        var input = prompt('아이디를 입력하시오', '');
+        
+            if (id != input) {
+                alert('아이디가 일치하지않습니다');
+                location.reload();
+
+                               
+            }
+            else
+                var input2 = prompt('비밀번호를 입력하시오', ' ');
+          if (input2 != pw) {
+              alert(id + '님 비밀번호가 일치하지 않습니다');
+              location.reload();
+                               }
+                    else
+                        document.write(id + '님 반갑습니다!');
+                        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

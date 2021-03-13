@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//주소와 창의 형태를 결정
+		//open() 메서드는 새로운 window객체를 생성하는 메서드
+		//팝업을 열고 닫기만 하는게 아니라 윈도우 객체를 리턴
+		window.open('http://www.ync.ac.kr/kor/', '','top = 50 left = 100, width=300, height =300, location= yes');
+		var value = window.open('', '', 'width=300, height=200');
+
+		value.document.write('<h3> 영남이공대학 </h3>')
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

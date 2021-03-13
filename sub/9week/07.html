@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>this키워드</title>
+	<script type="text/javascript">
+		var car = {
+			name : 'car1',
+			model : 400,
+			color : 'black',
+
+			run : function() {
+				var out ='';
+				for(var i in this) {
+					if (i != 'run') {
+						out += i + ': \t' + this[i] +'\n';
+
+					}
+				}
+				alert(out);
+			}
+		};
+
+		var student = {
+			name:'홍길동'
+		};
+		student.run = car.run;
+		car.run();
+		student.run();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

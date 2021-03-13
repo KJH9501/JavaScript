@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>적정 체중을 구하는 테스트기</title>
+    <script>
+        var cm = prompt('키를 입력하시오.', ' ');
+        var numinput = (Number(cm));
+        var kg = prompt('몸무게를 입력하시오', ' ');
+        var numinput2 = (Number(kg));
+        
+        document.write('신장 :' + cm + '<br>');
+        document.write('몸무게 :' + kg + '<br>');
+        document.write('적정체중 = (' + (cm) + '- 100) X 0.9 =' + (cm - 100) * 0.9 +'<br>');
+        document.write('결과 : 적정체중은' + (cm - 100) * 0.9 + '<br>');
+        document.write('현재 적정체중에서' + (kg -((cm - 100) * 0.9))  + 'kg 초과한것을 알 수 있습니다.');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

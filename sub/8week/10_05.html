@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>클로저 2</title>
+	<script type="text/javascript">
+		function countVisit(){
+			var count =0;
+			var plus = function(){
+				return count +=1;
+			}
+			return plus;
+		}
+		/*클로저
+		/지역변수를 남겨두는 현상
+		/함수로 생성도니 공간
+		리턴된 함수 자체*/
+		var num = countVisit();
+		num(); // 1
+		num(); // 2
+		num(); // 3
+		alert(num()); // 4
+		</script>	
+</head>
+<body>
+	
+</body>
+</html>

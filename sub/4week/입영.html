@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>신검</title>
+    <script>
+        var input = prompt('점수', '');
+        var num = parseInt(input);
+        var input2 = prompt('나이', '');
+        var age = parseInt(input2);
+        
+        
+        if (num > 80 && age >= 18) {
+            var input3 = prompt('성별', '');
+            var sng = String(input3);
+            if (sng == '남') {
+                alert('입영대상입니다');
+            }
+            else
+                alert('탈락');
+        }
+        else
+            alert('탈락');
+              
+           
+           
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

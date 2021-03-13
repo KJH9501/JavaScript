@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>콜백함수</title>
+</head>
+<script type="text/javascript">
+	function callTemTimes (callback){
+		for(var i=0; i<10; i++){
+			callback();
+		}
+	}
+	var callback = function(){
+		alert('함수 호출');
+	};
+	callTemTimes(callback);
+	
+</script>
+<body>
+	
+</body>
+</html>

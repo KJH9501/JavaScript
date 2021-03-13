@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>캡슐화</title>
+    <script>
+        function Rectangle() {
+            var width;
+            var height;
+
+            this.setWidth = function (w) {
+                if (w < 0) {
+                    return alert('음수를 입력할 수 없습니다.');
+                } else {
+                    width = w;
+                }
+            };
+            this.setHeight = function (h) {
+                if (h < 0) {
+                    alert('음수를 입력할 수 없습니다.');
+                } else {
+                    height = h;
+                }
+            };
+            this.getWidth = function () {
+                return width;
+            };
+            this.getHeight = function () {
+                return height;
+            };
+            this.getArea = function () {
+                return width * height;
+            };
+        }
+        var rectangle = new Rectangle();
+        rectangle.setHeight(10);
+        alert('height : \t' + rectangle.getHeight());
+        rectangle.setWidth(-4);
+        alert('width : \t' + rectangle.getWidth());
+        alert('Area : \t' + rectangle.getArea());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

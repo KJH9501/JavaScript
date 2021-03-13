@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>구글</title>
+    <script>
+        var input = prompt('입력하세요', '');
+        var site = String(input);
+       
+
+        switch (true) {
+            case site == '네이버':
+                location.href = "https://www.naver.com/"
+                break;
+            case site == '다음':
+                location.href = "https://www.daum.net/"
+                break;
+            case site == '구글':
+                location.href = "https://www.google.co.kr/"
+                break;
+            case site == '영이공':
+                location.href = "https://www.ync.ac.kr/"
+                break;
+
+            default:
+                alert('없는 주소입니다');
+                break;
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

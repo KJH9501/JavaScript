@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>in키워드</title>
+	<script type="text/javascript">
+		var car = {
+			name : 'car1',
+			model : 400,
+			color : 'black',
+
+			company : {
+				start:1997,
+				logo:'star'
+			},
+			run : function() {
+				alert(this.name + '  is running.');
+			}
+		};
+		// in 키워드란? 
+		// 안에 존재하면 true반환 존재하지않으면 false반환
+		alert('name' in car);
+		alert('company' in car);
+		alert('run' in car);
+		alert('test' in car);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

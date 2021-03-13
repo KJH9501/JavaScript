@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>상속 구현</title>
+	<script type="text/javascript">
+		function Make(name) {
+			this.name = name;
+		}
+
+		Make.prototype.print = function() {
+			alert('생성자 함수  Make() 프로토타입에 새로운 메서드 추가')
+		}
+		function Person(name) {
+			this.name = name;
+		}
+		Person.prototype = new Make();
+		Person.prototype.hello = function (){
+			return 'hello world';
+		}
+		var person = new Person('홍길동');
+		person.print();
+		alert(person.hello());
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

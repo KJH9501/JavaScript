@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지역변수</title>
+</head>
+<script type="text/javascript">
+	function outerFunction() {
+		var a=10;
+		var b=20;
+		function innerFunction(){
+			var b =30;
+			alert(a); // 10
+			alert(b); // 30
+		}
+		alert(b);
+		innerFunction();
+		alert('outerFunction');
+	}
+	outerFunction();
+	innerFunction(); // innerFunction()함수를 호출시 내부함수는 내부함수를 포함하는 외부함수에만 사용할수있어서 오류가 발생
+</script>
+<body>
+	
+</body>
+</html>

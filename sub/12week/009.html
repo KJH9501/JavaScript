@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//마지막에 나오게함
+		window.onload = function() {
+			alert('프로세스-0');
+		};
+	</script>
+</head>
+<body>
+	<h1>프로세스-1</h1>
+	<script> alert('프로세스-2'); </script>
+	<h1>프로세스-2</h1>
+	<script> alert('프로세스-3'); </script>
+</body>
+</html>

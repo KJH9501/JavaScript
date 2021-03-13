@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>학생sort메서드</title>
+    <script>
+                            function Student(name, korean, math, english, science) {
+                                this.이름 = name;
+                                this.국어 = korean;
+                                this.수학 = math;
+                                this.영어 = english;
+                                this.과학 = science;
+
+                                this.getSum = function () {
+                                    return this.국어 + this.수학 + this.영어 + this.과학
+                                }
+                                this.getAverage = function () {
+                                    return this.getSum() / 4;
+                                }
+
+                                this.toString = function(){
+                                    return this.이름 + '\t' + this.getSum() + '\t' + this.getAverage();
+                                }
+                            }
+                            var students = [];
+                            students.push(new Student('박정호', 99, 98, 100, 99));
+                            students.push(new Student('김정훈', 75, 79, 10, 99));
+                            students.push(new Student('김주현', 92, 97, 20, 100));
+                            students.push(new Student('정동혁', 56, 74, 12, 89));
+                            students.push(new Student('김병길', 54, 68, 84, 42));
+                            students.push(new Student('정선균', 90, 85, 62, 25));
+                            students.push(new Student('강성민', 20, 30, 56, 50));
+
+                            students.sort(function (left, right) {
+                                return right.getSum() - left.getSum();
+                            });
+                            
+                            students = students.slice(0, 3);
+
+                            var output = '이름\t총점\t평균\n';
+                            for (var i in students) {
+                                output += students[i].toString() + '\n';
+                            }
+                            alert(output);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>평균입력</title>
+    <script>
+        var input = prompt('국어점수입력', '');
+        var n1 = parseInt(input);
+        var input = prompt('수학점수입력', '');
+        var n2 = parseInt(input);
+        var input = prompt('영어점수입력', '');
+        var n3 = parseInt(input);
+        var avg = parseInt((n1 + n2 + n3) / 3);
+        alert('평균값은 :'+ avg);
+        if (avg > 90) {
+            alert('수');
+        }
+        else {
+            if (avg > 80) {
+                alert('우');
+            }
+            else {
+                if (avg > 70) {
+                    alert('미');
+                }
+                else {
+                    if (avg > 60) {
+                        alert('양')
+                    }
+                    else
+                        alert('가');
+                }
+            }
+        }
+           
+            
+      </script>
+</head>
+<body>
+
+</body>
+</html>

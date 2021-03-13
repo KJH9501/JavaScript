@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>객체가 다른객체로 상속</title>
+	<script type="text/javascript">
+		var person = {
+			age : 20,
+			print : function () {
+				alert('생성자 함수 없이 속성 구현');
+			},
+			getName : function () {
+				return this.name;
+			
+			}
+		};
+		var person1 = Object.create(person);
+		alert(person1.age);
+		person1.print();
+
+		person1.name = '홍길동';
+		alert(person1.getName());
+
+		person1.hello = function () {
+			alert('hello world');
+		}
+		person1.hello();		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

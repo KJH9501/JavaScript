@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>과제</title>
+	<script type="text/javascript">
+		var input = prompt('종류', '닭, 소, 돼지');
+		var chprice =1500, piprice = 2000, coprice = 2500;
+		if (input == '닭') {
+			var gram = prompt('그람수 입력', '100그램 단위');
+			alert(gram +'그램당 ' + '가격은 : ' + chprice*(gram/100) + '원');
+		}
+		else if (input == '돼지') {
+			var gram = prompt('그람수 입력', '100그램 단위');
+			alert(gram + '그램당 ' +'가격은 :' + piprice*(gram/100) + '원');
+		}
+		else if (input == '소') {
+			var gram = prompt('그람수 입력', '100그램 단위');
+			alert(gram + '그램당 ' +'가격은 :' + coprice*(gram/100) + '원');
+		}
+		else
+			alert('잘못입력');
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

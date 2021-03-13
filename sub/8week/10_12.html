@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>객체2</title>
+	<script type="text/javascript">
+		var car = {
+			name : 'car1',
+			model : 400,
+			color : 'blank',
+
+			company : {
+				start : 1997,
+				logo:'star'
+			},
+			run : function() {
+				alert(this.name + 'is running.'); // 메서드 바깥의 name을 끌어오기위해 this.name을 사용
+			}
+		};
+		alert(car.company.logo);
+		car.run(); // this를 사용하기위해 끌어옴
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

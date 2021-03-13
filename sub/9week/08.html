@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>객체와 배열</title>
+	<script type="text/javascript">
+		var student0 = {name: '홍길동', korean : 97, english:93, math: 98, history:96};
+		var student1 = {name: '김길동', korean : 87, english:88, math: 80, history:88};
+		var student2 = {name: '이길동', korean : 80, english:90, math: 83, history:93};
+		var student3 = {name: '고길동', korean : 95, english:87, math: 90, history:92};
+		var student4 = {name: '박길동', korean : 94, english:94, math: 91, history:85};
+
+		var students =[]; //배열은 하나의 변수에 여러개의 값을 저장
+		students.push(student0);
+		students.push(student1);
+		students.push(student2);
+		students.push(student3);
+		students.push(student4);
+
+		for (var i in students) {
+			students[i].getSum = function() {
+				return this.korean + this.english + this.math + this.history;
+			}
+			students[i].getAverage = function () {
+				return this.getSum() /4;
+			}
+		}
+		var out = '';
+		for (var j in students) {
+			with (students[j]) {
+				out += name + '\t총점:' + getSum() + '\t평균: ' + getAverage() + '\n';
+			}
+		}
+		alert(out);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

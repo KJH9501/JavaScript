@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>클로저3</title>
+		<script type="text/javascript">
+		function test(name) {
+			var output = 'Hello ' + name + '..!';
+			return function(){
+				alert(output);
+			};
+		}
+		var test_1 = test('Web');
+		var test_2 = test('javascript');
+
+		test_1();
+		test_2();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

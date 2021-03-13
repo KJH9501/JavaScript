@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>with 키워드</title>
+	<script type="text/javascript">
+		var car = {
+			name : 'car1',
+			model : 400,
+			color : 'black',
+
+			company : {
+				start:1997,
+				logo:'star'
+			},
+			run : function() {
+				alert(this.name + '  is running.');
+			}
+		};
+		var out = '';
+		var name = '홍길동';
+		with(car){
+			out += 'name : \t' + name + '\n';
+			out += 'model : \t' + model + '\n';
+			out += 'color : \t' + color + '\n';
+			out += 'company start : \t' + company.start + '\n';
+			out += 'company logo : \t' + company.logo + '\n';
+			out += '차주 : \t ' + window.name + '\n';
+			//window 객체는 바깥의(최상위) 객체를 인식받아서 불러온다
+		}
+		alert(out);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>switch</title>
+    <script>
+        var date = new Date();
+        var hour = date.getHours();
+        
+        switch (hour <= 24) {
+            case (hour<11):
+                alert('아침');
+                break;
+            case (hour<15):
+                alert('점심');
+                break;
+            default:
+                alert('저녁');
+                break;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

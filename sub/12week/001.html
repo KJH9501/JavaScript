@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JSON</title>
+	<script type="text/javascript">
+		var car = {
+			name : 'car1',
+			model : 400,
+			color : 'black'
+		};
+		var student = {
+			name : '홍길동',
+			korean : 99,
+			toJSON : function() {
+				return {
+					history : 98
+				};
+			}
+		}
+		// JSON.stringify() : 자바스크립트 객체를 JSON문자열로 변환
+		// JSON.parse() : JSON문자열을 자바스크립트 객체로 변환
+		alert(JSON.stringify(car));
+		alert(JSON.stringify(student));
+		var car1 =JSON.parse('{"name" : "car1","model":400,"color":"black"} ');
+		alert(car1.name + ' : ' + car1.model + ' : ' + car1.color);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

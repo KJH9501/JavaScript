@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>객체 테스트2</title>
+	<script type="text/javascript">
+	var person = {
+			name : '김정훈',
+			age : 24,
+			num : 1405087,
+			grade : 1,
+			language : '한국말'
+		
+		};
+		var output = '';
+		for (var key in person) {
+			output +='^~^' + key + ':' + person[key] + '\n';
+		}
+		alert(output);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
